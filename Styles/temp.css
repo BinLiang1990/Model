@@ -1,0 +1,100 @@
+﻿/*
+Temp专用样式
+Combine with jmei
+*/
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {cursor: pointer;-webkit-appearance: button;}
+
+.wcbox{left:35%;width:30%;position:fixed; top:20%; z-index: 100000; background-clip: padding-box;background-color: rgba(0, 0, 0, 0.2);box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);padding: 10px;}
+.wcboxbg {background: none repeat scroll 0 0 #000000;display: none;height: 100%;left: 0;opacity: 0.4;position: fixed;top: 0;width: 100%;z-index: 1000;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40)}
+
+/*.ajaxheader {border-bottom: 1px solid #eee;}
+.ajaxh3{font-size: 16px;font-weight:bold;line-height:36px;color:#646464;font-family:'宋体';}
+.ajaxClose{margin-top: 7px;float: right;color: black;font-size: 25px;font-weight: bold;line-height: 13.5px;text-shadow: 0 1px 0 white;filter: alpha(opacity=25);-khtml-opacity: 0.25;-moz-opacity: 0.25;opacity: 0.25;text-decoration:none;}
+.ajaxContent {background:#fff; border:1px solid #eee;padding:5px 15px}
+.ajaxfoot{ padding:5px 5px 10px; text-align:right}*/
+
+
+.ajaxheader {border-bottom: 1px solid #eee; padding:5px 10px 0 15px;cursor: move;}
+.ajaxh3{font-size: 16px;font-weight:bold;line-height:36px;color:#646464;font-family:'宋体';}
+.ajaxClose{margin-top: 9px;float: right;color: black;font-size: 25px;font-weight: bold;line-height: 13.5px;text-shadow: 0 1px 0 white;filter: alpha(opacity=25);-khtml-opacity: 0.25;-moz-opacity: 0.25;opacity: 0.25;text-decoration:none;}
+.ajaxContent {background:#fff; border:1px solid #eee;}
+.ajaxfoot{ padding:5px 15px 10px; text-align:right}
+.ajaxbody{ padding:0 15px}
+
+
+
+
+/*margin*/
+.ml05{margin-left:5px;}
+
+/*btn*/
+.uibtnf60,.uibtnccc,.uibtn666,.uibtn999,.uibtn7b8c9e{ padding:6px 20px;display:inline-block; text-decoration:none; border-radius:3px; border:0; cursor:pointer}
+.uibtnf60{background:#f60; color:#fff;}
+.uibtnf60:hover{ background:#eb6811}
+.uibtn999{ background:#999; color:#fff;}
+.uibtn999:hover{ background:#8e8d8d}
+
+
+/*弹出框*/
+.d_message {
+  height: 44px;
+  line-height: 44px;
+  font-size: 22px;
+}
+
+.d_message i {
+  content: '';
+  display: block;
+  float: left;
+  width: 51px;
+  height: 42px;
+  margin-right: 13px;
+  background: transparent url(../images/global_sprite.png?v=5) no-repeat scroll top left;
+}
+
+.d_message-inline i {
+  content: '';
+  float: left;
+  width: 51px;
+  height: 42px;
+  margin-right: 13px;
+  margin-top: 5px;
+  background: transparent url(../images/global_sprite.png?v=5) no-repeat scroll -9px -373px;
+}
+
+.d_message_body{ font-size:15px; line-height:20px;}
+.d_message.success, .d_message-inline.success {
+  color: #339502;
+}
+
+.d_message.success i, .d_message-inline.success i {
+  background-position: -9px -373px;
+}
+
+.d_message.error, .d_message-inline.error {
+  color: #e83910;
+}
+
+.d_message.error i, .d_message-inline.error i {
+  background-position: -65px -458px;
+}
+
+.d_message.warning, .d_message-inline.warning {
+  color: #ed7730;
+}
+
+.d_message.warning i, .d_message-inline.warning i {
+  background-position: -9px -416px;
+}
+
+.d_message.warning, .d_message-inline.notice {
+  color: #fb9b00;
+}
+
+.d_message.warning i, .d_message-inline.notice i {
+  background-position: -9px -458px;
+}
+
+
+
