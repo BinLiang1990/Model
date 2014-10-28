@@ -1,4 +1,5 @@
-﻿var base = "../..";
+﻿//部署在IIS上之后，要设置base=""
+var base = "../..";
 var alias = {
     //lib
     "jquery": "/scripts/Libs/Jquery/1.11.0/Jquery",
