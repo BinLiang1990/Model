@@ -1,0 +1,83 @@
+﻿html, body, div, span, h1, h2, h3, h4, img, strong, ol, ul, li {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+h2 {
+    color: #323a41;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 1em 0 5px;
+}
+
+.header {
+    background: none repeat scroll 0 0 #6f5499;
+    border-top: 5px solid #323a41;
+    border-bottom: 1px solid #dcdcdc;
+    height: 80px;
+    width: 100%;
+}
+
+.forkme {
+    position: absolute;
+    top: -7px;
+    right: 0;
+    border: 0;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 0 0 30px 30px;
+    position: relative;
+    width: 950px;
+}
+
+.page {
+    display: none;
+    margin: 0 auto;
+    padding: 0 0 30px 30px;
+    position: relative;
+    width: 950px;
+}
+
+.display {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+.headline {
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px #fff;
+    padding: 10px;
+}
+
+    .headline h2 {
+        border-bottom: medium none;
+        box-shadow: none;
+    }
+
+.words ul {
+    margin: 1em 0 1em 2em;
+}
+
+    .words ul ul {
+        margin-left: 1em;
+    }
+
+    .words ul li {
+        list-style: none;
+        padding-left: 20px;
+        background: url(images/dot.png) 0 0.66em no-repeat;
+    }
+
+.pagemsg input[type="button"] {
+    margin-top: 10px;
+}

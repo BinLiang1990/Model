@@ -1,7 +1,6 @@
 ﻿/*
 2014年7月21日 made by 梁斌
 
-
 */
 
 define(function (require, exports) {
@@ -75,12 +74,6 @@ define(function (require, exports) {
                 $(".tooltip").remove();
             })
         }
-
-
-
-
-
-
     }
 
     View = Backbone.View.extend({
@@ -93,8 +86,14 @@ define(function (require, exports) {
             if (options.width) {
                 $(this.el).width(options.width);
             }
-            if (!options.backdrop) { $(".wcboxbg").click(function () { Common.ShowBox(false); }) }
-            else if (options.backdrop == "shake") { $(".wcboxbg").click(function () { Common.Shake($(".wcbox")) }) }
+            if (!options.backdrop)
+            {
+                $(".wcboxbg").click(function () { Common.ShowBox(false); })
+            }
+            else if (options.backdrop == "shake") {
+                $(".wcboxbg").click(function ()
+                { Common.Shake($(".wcbox")) })
+            }
 
             $(".ajaxheader").mousedown(function (event) {
                 var isMove = true;
@@ -106,7 +105,6 @@ define(function (require, exports) {
                     }
                 }).mouseup(function () { isMove = false; });
             })
-
             return this;
         },
         events: {

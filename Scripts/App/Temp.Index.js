@@ -1,6 +1,7 @@
 ﻿define(function (require) {
     var $ = require("jquery");
     var Common = require('common');
+    require('tweenmax');
 
     $(".alert").click(function () {
         Common.Action.Alert();
@@ -19,7 +20,7 @@
     })
 
     $(".alert4").click(function () {
-        Common.Action.Alert({ width: 300, state: "notice", title: "又瘦了", content: "妈蛋" });
+        Common.Action.Alert({ width: 300, state: "notice", title: "又瘦了", content: "- -" });
     })
 
     $(".alert5").click(function () {
@@ -39,6 +40,11 @@
         Common.Action.Confirm().bind("confirm", function () {
             alert("确定");
         });
+    })
+
+    $(".changenav").click(function () {
+        $(".page").hide();
+        $("#alert").show();
     })
 
 })

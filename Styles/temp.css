@@ -29,11 +29,20 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {curso
 .ml05{margin-left:5px;}
 
 /*btn*/
+
 .uibtnf60,.uibtnccc,.uibtn666,.uibtn999,.uibtn7b8c9e{ padding:6px 20px;display:inline-block; text-decoration:none; border-radius:3px; border:0; cursor:pointer}
 .uibtnf60{background:#f60; color:#fff;}
 .uibtnf60:hover{ background:#eb6811}
+.uibtnccc{ background:#ccc; color:#666;}
+.uibtnccc:hover{ background:#bfbfbf; color:#666;}
 .uibtn999{ background:#999; color:#fff;}
 .uibtn999:hover{ background:#8e8d8d}
+.uibtn666{ background:#666; color:#fff;}
+.uibtn666:hover{ background:#5c5b5b}
+.uibtn7b8c9e{ background:#7b8c9e; color:#fff;}
+.uibtn7b8c9e:hover{ background:#6d7f93; color:#fff; text-decoration:none;}
+.uibtnde{cursor:not-allowed}
+.uibtnde:hover{cursor:not-allowed;}
 
 
 /*弹出框*/

@@ -2,24 +2,54 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>temp</title>
+    <link href="./Styles/style.css" rel="stylesheet" type="text/css" />
     <link href="./Styles/temp.css" rel="stylesheet" type="text/css" />
+
     <script src="./Scripts/Libs/seajs/2.2.1/sea.js" type="text/javascript"></script>
     <script src="./Scripts/Config.js" type="text/javascript"></script>
     <script src="./Scripts/App/qq.js" type="text/javascript"></script>
 </head>
 <body>
-    <div>
-        <input type="button" class="alert" value="普通Alert" />
-        <input type="button" class="alert1" value="successAlert" />
-        <input type="button" class="alert2" value="errorAlert" />
-        <input type="button" class="alert3" value="noticeAlert" />
-        <input type="button" class="alert4" value="WidthAlert" />
-        <input type="button" class="alert5" value="BlockAlert" />
-        <input type="button" class="alert6" value="ShakeAlert" />
-        <input type="button" class="alert7" value="ForceAlert" />
+    <div class="header">
+        <a target="_blank" href="https://github.com/fireliangbin/Model">
+            <img alt="Fork me on GitHub" src="images/forkme.jpg" class="forkme" />
+        </a>
     </div>
-    <div style="margin-top: 10px;">
-        <input type="button" class="confirm" value="普通confirm" />
+    <div class="content">
+        <div class="page active">
+            <div class="headline">
+                <h2>seajs model</h2>
+            </div>
+            <a id="nav_alert" class="changenav">alert</a>
+             
+            <div style="margin-top: 10px;">
+                <input type="button" class="confirm uibtnf60" value="普通confirm" />
+            </div>
+        </div>
+        <div id="alertPage" class="page">
+            <div class="headline">
+                <h2>Alert</h2>
+            </div>
+            <div class="pagemsg">
+                <input type="button" class="alert uibtnf60" value="普通Alert" />
+                <input type="button" class="alert1 uibtnf60" value="successAlert" />
+                <input type="button" class="alert2 uibtnf60" value="errorAlert" />
+                <input type="button" class="alert3 uibtnf60" value="noticeAlert" />
+                <input type="button" class="alert4 uibtnf60" value="WidthAlert" />
+                <input type="button" class="alert5 uibtnf60" value="BlockAlert" />
+                <input type="button" class="alert6 uibtnf60" value="ShakeAlert" />
+                <input type="button" class="alert7 uibtnf60" value="ForceAlert" />
+            </div>
+        </div>
+        <div class="page">
+            <div class="headline">
+                <h2>Confirm</h2>
+            </div>
+
+
+        </div>
+
+
     </div>
 </body>
 <script type="text/javascript">    seajs.use("./Scripts/App/Temp.index")</script>
