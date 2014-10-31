@@ -40,7 +40,7 @@ h2 {
     display: none;
     margin: 0 auto;
     padding: 0 0 30px 30px;
-    position: relative;
+    position: fixed;
     width: 950px;
 }
 

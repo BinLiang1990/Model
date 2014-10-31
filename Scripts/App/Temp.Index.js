@@ -43,8 +43,18 @@
     })
 
     $(".changenav").click(function () {
-        $(".page").hide();
-        $("#alert").show();
+        Action.ChangePage("." + $(this).attr("id").split('_')[1]);
     })
+
+    var Action = {
+        ChangePage: function (page) {
+            TweenMax.set(page, { alpha: 0 });
+            TweenMax.to(".active", 1, { css: { alpha: 0 }, ease: Linear.easeIn });
+            TweenMax.to(page, 1, { css: { alpha: 1 }, ease: Linear.easeIn, onStart: function () { $(".active").removeClass("active"); $(page).addClass("active"); } });
+        }
+    }
+
+
+
 
 })
