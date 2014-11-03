@@ -7,22 +7,19 @@
 
     <script src="./Scripts/Libs/seajs/2.2.1/sea.js" type="text/javascript"></script>
     <script src="./Scripts/Config.js" type="text/javascript"></script>
-    <script src="./Scripts/App/qq.js" type="text/javascript"></script>
 </head>
 <body>
+    <span id="forkongithub"><a href="https://github.com/fireliangbin/Model">Fork me on GitHub</a></span>
     <div class="header">
-        <a target="_blank" href="https://github.com/fireliangbin/Model">
-            <img alt="Fork me on GitHub" src="images/forkme.jpg" class="forkme" />
-        </a>
     </div>
     <div class="content">
         <div class="page mainPage active">
             <div class="headline">
-                <h2>seajs model</h2>
+                <h2>Test model</h2>
             </div>
-            <p><a id="nav_alertPage" class="changenav">alert</a></p>
-            <p><a id="nav_confirmPage" class="changenav">confirm</a></p>
-
+            <p><a href="javascript:void(0)" id="nav_alertPage" class="changenav">alert</a></p>
+            <p><a href="javascript:void(0)" id="nav_confirmPage" class="changenav">confirm</a></p>
+            <p><a href="javascript:void(0)" id="nav_loadPage" class="changenav">loading</a></p>
         </div>
         <div class="page alertPage">
             <a class="btnback back"></a>
@@ -47,6 +44,8 @@ backdrop:点击背景效果   1)默认隐藏,2)default：点背景不隐藏,3)sh
 content:内容
 state:内置样式     1)success:成功,2)error:失败,3)notice:警告
 close:是否出现关闭按钮
+cancel:是否出现取消按钮
+confirm:是否出现确定按钮
                 </pre>
 
             </div>
@@ -56,11 +55,19 @@ close:是否出现关闭按钮
             <div class="headline">
                 <h2>Confirm</h2>
             </div>
-            <div style="margin-top: 10px;">
+            <div class="pagemsg">
                 <input type="button" class="confirm uibtnf60" value="普通confirm" />
             </div>
         </div>
-
+        <div class="page loadPage">
+            <a class="btnback back"></a>
+            <div class="headline">
+                <h2>Loading</h2>
+            </div>
+            <div class="pagemsg">
+                <input type="button" class="loading uibtnf60" value="普通loading" />
+            </div>
+        </div>
 
     </div>
 </body>

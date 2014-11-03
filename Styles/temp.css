@@ -5,15 +5,8 @@ Combine with jmei
 
 button,html input[type="button"],input[type="reset"],input[type="submit"] {cursor: pointer;-webkit-appearance: button;}
 
-.wcbox{left:35%;width:30%;position:fixed; top:20%; z-index: 100000; background-clip: padding-box;background-color: rgba(0, 0, 0, 0.2);box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);padding: 10px;}
+.wcbox{left:40%;width:20%;position:fixed; top:20%; z-index: 100000; background-clip: padding-box;background-color: rgba(0, 0, 0, 0.2);box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);padding: 10px;}
 .wcboxbg {background: none repeat scroll 0 0 #000000;display: none;height: 100%;left: 0;opacity: 0.4;position: fixed;top: 0;width: 100%;z-index: 1000;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40)}
-
-/*.ajaxheader {border-bottom: 1px solid #eee;}
-.ajaxh3{font-size: 16px;font-weight:bold;line-height:36px;color:#646464;font-family:'宋体';}
-.ajaxClose{margin-top: 7px;float: right;color: black;font-size: 25px;font-weight: bold;line-height: 13.5px;text-shadow: 0 1px 0 white;filter: alpha(opacity=25);-khtml-opacity: 0.25;-moz-opacity: 0.25;opacity: 0.25;text-decoration:none;}
-.ajaxContent {background:#fff; border:1px solid #eee;padding:5px 15px}
-.ajaxfoot{ padding:5px 5px 10px; text-align:right}*/
-
 
 .ajaxheader {border-bottom: 1px solid #eee; padding:5px 10px 0 15px;cursor: move;}
 .ajaxh3{font-size: 16px;font-weight:bold;line-height:36px;color:#646464;font-family:'宋体';}
@@ -105,5 +98,33 @@ button,html input[type="button"],input[type="reset"],input[type="submit"] {curso
   background-position: -9px -458px;
 }
 
+/*pop loading*/
+.pop{ height:100%; position:fixed; z-index:9999; top:0; right:0; bottom:0; left:0; background:rgba(255,255,255,0.5); padding-left:50%; width:50%}
+.popui{ background:#fff; z-index:10000; border:8px solid rgba(0,0,0,0.5); border-radius:5px;position:fixed; margin-top:12%}
+.popui{ -moz-background-clip: border;-webkit-background-clip: border;background-clip: border-box; -moz-background-clip: padding; -webkit-background-clip: padding; background-clip: padding-box;-moz-background-clip: content;-webkit-background-clip: content; background-clip: content-box; }
+.popui-head{ position:relative; height:32px; width:100%; line-height:32px; background:#eee}
+.popui-head h2{ padding:0 10px; height:32px; line-height:32px; font-weight:normal; font-size:14px; font-family:'Microsoft YaHei'}
+.popui-head span{ position:absolute; right:0; top:0; height:32px; line-height:32px; display:inline-block; font-size:12px;}
+.popui-head span a{ line-height:9999px; overflow:hidden}
+.popui-foot{ padding:10px 20px 20px; text-align:right}
+.tckbox{ width:500px; margin-left:-250px;}
+
+/*.tckbox {
+background-clip: padding-box;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    left: 40%;
+    padding: 10px;
+    position: fixed;
+    top: 20%;
+    width: 20%;
+    z-index: 100000;
+}*/
+
+/*loadpop*/
+.loadbox{ padding:20px; text-align:center}
+.loadbox span{ height:40px; line-height:40px; font-size:14px; padding-left:45px}
+
+.icoloading{ background:url(../images/loading.gif) no-repeat;height:40px; display:inline-block;}
 
 

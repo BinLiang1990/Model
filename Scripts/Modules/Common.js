@@ -9,13 +9,13 @@ define(function (require, exports) {
     var Backbone = require('backbone');
     var Mustache = require('mustache');
     var temps = {
-        confirm: '<div class="ajaxContent"><div class="ajaxheader"><a class="ajaxClose" href="javascript:void(0)">×</a><span class="ajaxh3">{{title}}</span></div><div class="ajaxbody">{{#state}} <span class="d_message-inline {{state}}"><i></i></span>{{/state}}<p>{{{content}}}</p></div><div class="ajaxfoot">{{#confirm}}<input class="uibtnf60 ml05" id="btn_confirm" type="button" value="确 定">{{/confirm}}{{#cancel}}<input class="uibtn999 ml05 close" type="button"  value="关 闭">{{/cancel}}</div></div>',
-        alert: '<div class="ajaxContent"><div class="ajaxheader">{{#close}}<a class="ajaxClose" href="javascript:void(0)">×</a>{{/close}}<span class="ajaxh3">{{title}}</span></div><div class="ajaxbody">{{#state}} <span class="d_message-inline {{state}}"><i></i></span>{{/state}}<p>{{{content}}}</p></div><div class="ajaxfoot">{{#confirm}}<input class="uibtnf60 ml05" id="btn_pass" type="button" value="确 定">{{/confirm}}</div></div>',
+        confirm: '<div class="ajaxContent"><div class="ajaxheader">{{#close}}<a class="ajaxClose" href="javascript:void(0)">×</a>{{/close}}<span class="ajaxh3">{{title}}</span></div><div class="ajaxbody">{{#state}} <span class="d_message-inline {{state}}"><i></i></span>{{/state}}<p>{{{content}}}</p></div><div class="ajaxfoot">{{#confirm}}<input class="uibtnf60 ml05" id="btn_confirm" type="button" value="确 定">{{/confirm}}{{#cancel}}<input class="uibtn999 ml05 close" type="button"  value="关 闭">{{/cancel}}</div></div>',
+        alert: '<div class="ajaxContent"><div class="ajaxheader">{{#close}}<a class="ajaxClose" href="javascript:void(0)">×</a>{{/close}}<span class="ajaxh3">{{title}}</span></div><div class="ajaxbody">{{#state}} <span class="d_message-inline {{state}}"><i></i></span>{{/state}}<p>{{{content}}}</p></div><div class="ajaxfoot">{{#confirm}}<input class="uibtnf60 ml05" id="btn_pass" type="button" value="确 定">{{/confirm}}{{#cancel}}<input class="uibtn999 ml05 close" type="button"  value="关 闭">{{/cancel}}</div></div>',
 
         tip: '<div class="tooltip" style="font-size: 12px;line-height: 1.4;position: absolute;visibility: visible;z-index: 1070;margin-top: -3px;padding: 5px 0;"><div style="border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 10px solid {{color}};width: 0;height: 0;position:absolute;bottom:-5px;left: 50%;margin-left: -5px;"></div><div style="background-color: {{color}};border-radius: 4px;color: #fff;max-width: 200px;padding: 3px 8px;text-align: center;text-decoration: none;">{{content}}</div></div>',
 
         'box': '<div class="ajaxContent"><div class="ajaxheader"><a class="ajaxClose" href="javascript:void(0)">×</a><span class="ajaxh3">{{title}}</span></div>{{body}}</div>',
-        'loading': '<div id="loadingElement" class="pop"  style="z-index:999999; display:none;"><div class="popui tckbox"><div class="loadbox"><span class="icoloading">正在努力加载中，请稍候……</span></div></div></div>',
+        loading: '<div id="loadingElement" class="pop"  style="z-index:999999; display:none;"><div class="popui tckbox"><div class="loadbox"><span class="icoloading">正在努力加载中，请稍候……</span></div></div></div>',
         'newbox': '<div class="modal-header"><a href="#" class="close">&times;</a><h3>{{title}}</h3></div>{{body}}'
     };
     var defSet = { title: "Have a nice day ^-^", content: "I'm content -.-" };
@@ -35,7 +35,7 @@ define(function (require, exports) {
         },
         Loading: function (Switch) {
             if (Switch) {
-                $("body").append(templates['loading']).fadeIn(500);
+                $("body").append(temps.loading).fadeIn(500);
                 $("#loadingElement").show();
             } else {
                 $("#loadingElement").fadeOut(200);

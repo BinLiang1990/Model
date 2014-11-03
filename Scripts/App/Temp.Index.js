@@ -8,15 +8,15 @@
     })
 
     $(".alert1").click(function () {
-        Common.Action.Alert({ width: 500, state: "success", title: "I'm a winner ^-^", content: "Win~~~~ ╮(￣▽￣)╭" });
+        Common.Action.Alert({ state: "success", title: "I'm a winner ^-^", content: "Win~~~~ ╮(￣▽￣)╭" });
     })
 
     $(".alert2").click(function () {
-        Common.Action.Alert({ width: 500, state: "error", title: "Error", content: "Sth is wrong" });
+        Common.Action.Alert({ state: "error", title: "Error", content: "Sth is wrong" });
     })
 
     $(".alert3").click(function () {
-        Common.Action.Alert({ width: 500, state: "notice", title: "Pay attention class", content: "超生德V5，It's a miracle" });
+        Common.Action.Alert({ state: "notice", title: "Pay attention class", content: "超生德V5，It's a miracle" });
     })
 
     $(".alert4").click(function () {
@@ -24,22 +24,25 @@
     })
 
     $(".alert5").click(function () {
-        Common.Action.Alert({ width: 500, title: "Block", backdrop: "default", content: "点黑的地方不隐藏了？" });
+        Common.Action.Alert({ title: "Block", backdrop: "default", content: "点黑的地方不隐藏了？" });
     })
 
     $(".alert6").click(function () {
-        Common.Action.Alert({ width: 500, title: "Shake shake shake", backdrop: "shake", content: "I'm cold" });
+        Common.Action.Alert({ title: "Shake shake shake", backdrop: "shake", content: "I'm cold" });
     })
 
     $(".alert7").click(function () {
-        Common.Action.Alert({ width: 500, title: "You have no idea", backdrop: "shake", content: "you have to click me", close: false });
+        Common.Action.Alert({ title: "You have no idea", backdrop: "shake", content: "you have to click me", close: false });
     })
 
     $(".confirm").click(function () {
-        Common.Action.ShowBox(true);
         Common.Action.Confirm().bind("confirm", function () {
-            alert("确定");
+            Common.Action.Alert({ content: "确定" });
         });
+    })
+
+    $(".loading").click(function () {
+        Common.Action.Loading(true);
     })
 
     $(".changenav").click(function () {
