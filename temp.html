@@ -18,29 +18,41 @@
     <div class="content">
         <div class="page mainPage active">
             <div class="headline">
-                <h2>seajs model<span>back</span></h2>
+                <h2>seajs model</h2>
             </div>
-            <a id="nav_alertPage" class="changenav">alert</a>
-            <a id="nav_confirmPage" class="changenav">confirm</a>
+            <p><a id="nav_alertPage" class="changenav">alert</a></p>
+            <p><a id="nav_confirmPage" class="changenav">confirm</a></p>
 
         </div>
         <div class="page alertPage">
+            <a class="btnback back"></a>
             <div class="headline">
                 <h2>Alert</h2>
             </div>
             <div class="pagemsg">
-                <a></a>
+
                 <input type="button" class="alert uibtnf60" value="普通Alert" />
-                <input type="button" class="alert1 uibtnf60" value="successAlert" />
-                <input type="button" class="alert2 uibtnf60" value="errorAlert" />
-                <input type="button" class="alert3 uibtnf60" value="noticeAlert" />
-                <input type="button" class="alert4 uibtnf60" value="WidthAlert" />
-                <input type="button" class="alert5 uibtnf60" value="BlockAlert" />
-                <input type="button" class="alert6 uibtnf60" value="ShakeAlert" />
-                <input type="button" class="alert7 uibtnf60" value="ForceAlert" />
+                <input type="button" class="alert1 uibtnf60" value="成功" />
+                <input type="button" class="alert2 uibtnf60" value="失败" />
+                <input type="button" class="alert3 uibtnf60" value="警示" />
+                <input type="button" class="alert4 uibtnf60" value="宽度" />
+                <input type="button" class="alert5 uibtnf60" value="点背景无效" />
+                <input type="button" class="alert6 uibtnf60" value="点背景抖动" />
+                <input type="button" class="alert7 uibtnf60" value="一定要点确定哦" />
+                <p></p>
+                <pre>
+width:宽度
+title:标题
+backdrop:点击背景效果   1)默认隐藏,2)default：点背景不隐藏,3)shake：shake
+content:内容
+state:内置样式     1)success:成功,2)error:失败,3)notice:警告
+close:是否出现关闭按钮
+                </pre>
+
             </div>
         </div>
         <div class="page confirmPage">
+            <a class="btnback back"></a>
             <div class="headline">
                 <h2>Confirm</h2>
             </div>

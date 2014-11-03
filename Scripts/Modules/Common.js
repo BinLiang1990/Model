@@ -84,10 +84,12 @@ define(function (require, exports) {
             var content = Mustache.to_html(this.template, options);
             $(this.el).html(content);
             if (options.width) {
+                owidth = $(this.el).width();
+                oleft = $(this.el).offset().left;
                 $(this.el).width(options.width);
+                $(this.el).offset({ left: (oleft + owidth / 2 - options.width / 2) });
             }
-            if (!options.backdrop)
-            {
+            if (!options.backdrop) {
                 $(".wcboxbg").click(function () { Common.ShowBox(false); })
             }
             else if (options.backdrop == "shake") {

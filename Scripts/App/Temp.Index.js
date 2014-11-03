@@ -46,6 +46,10 @@
         Action.ChangePage("." + $(this).attr("id").split('_')[1]);
     })
 
+    $(".back").click(function () {
+        Action.ChangePage(".mainPage");
+    })
+
     var Action = {
         ChangePage: function (page) {
             TweenMax.set(page, { alpha: 0 });
